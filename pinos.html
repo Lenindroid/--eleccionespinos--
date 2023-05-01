@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Elecciones Primavera 2023 - Pinos</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">REPÚBLICA DEMOCRÁTICA Y REPRESENTATIVA DE PINOS</h1>
+    <h2>Elecciones Primavera 2023</h2>
+    <p id="description">Llena con los datos que se te piden...</p>
+    <form id="survey-form">
+      <fieldset class="margen" id="datos">
+        <legend>Proporciona tus datos personales</legend>
+        <label for="name" id="name-label">Escribe tu nombre: <input name="name" type="text" id="name" placeholder="Lenin Rojas Sánchez" required/></label>
+        <label for="email" id="email-label">Escribe tu email: <input type="email" id="email" name="email" placeholder="lenin@gmail.com" required/></label>
+        <label for="number" id="number-label">Escribe tu edad <input type="number" id="number" name="number" min="5" max="130" placeholder="15" required></label>
+        <label for="dropdown">Selecciona el estado donde vives:
+          <select id="dropdown" name="dropdown">
+            <option value="">(Selecciona uno)</option>
+            <option value="1">Juguetilandia</option>
+            <option value="2">Aguacatitlán</option>
+            <option value="3">Discordea</option>
+            <option value="4">Reserva Atoyac</option>
+            <option value="5">Esquina del sol</option>
+            <option value="6">Villa del cubo</option>
+            <option value="6">Aldea Jimi</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset class="margen">
+        <legend>Selecciona al candidato de tu preferencia</legend>
+        <label for="pedre"><input name="candidato" type="radio" id="pedre" value="pedre"/> Pedre</label>
+        <label for="lenen"><input name="candidato" type="radio" id="lenen" value="lenen"/> Lenen</label>
+        <label for="nulo"><input name="candidato" type="radio" id="nulo" value="nulo"/> Voto nulo</label>
+      </fieldset>
+      <fieldset class="margen">
+        <legend>Marca a los diputados que <strong>NO</strong> crees que deban permanecer en la cámara</legend>
+        <label for="isak"><input name="diputado" type="checkbox" id="isak" value="isak"/>Isak</label>
+        <label for="cristo"><input name="diputado" type="checkbox" id="cristo" value="cristo"/>Cristo</label>
+        <label for="edde"><input name="diputado" type="checkbox" id="edde" value="edde"/>Edde</label>
+        <label for="ingrid"><input name="diputado" type="checkbox" id="ingrid" value="ingrid"/>Ingrid</label>
+        <label for="ninguno"><input name="diputado" type="checkbox" id="ninguno" value="ninguno"/>Ninguno</label>
+      </fieldset>
+      <fieldset class="margen">
+        <legend>Otros asuntos importantes</legend>
+        <label>¿Qué opinas de que Pinos sea una república democrática representativa? ¿Por qué?
+          <textarea id="opinion" name="opinion" rows="50" cols="100" placeholder="Estoy totalmente de acuerdo, debido a que..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Enviar" id="submit"/>
+    </form>
+  </body>
+</html>
